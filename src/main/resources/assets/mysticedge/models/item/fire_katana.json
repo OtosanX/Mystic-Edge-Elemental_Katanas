@@ -2,5 +2,17 @@
   "parent": "item/handheld",
   "textures": {
     "layer0": "mysticedge:item/fire_katana"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [0, -90, 55],
+      "translation": [0, 4, 0],
+      "scale": [1, 1, 1]
+    },
+    "firstperson_righthand": {
+      "rotation": [0, -90, 35],
+      "translation": [1.0, 3.2, 1.0],
+      "scale": [0.9, 0.9, 0.9]
+    }
   }
 }
