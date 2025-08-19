@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": { "item": "minecraft:smithing_template_netherite_upgrade" },
+  "base": { "item": "mystic-edge:shadow_katana" },
+  "addition": { "item": "minecraft:netherite_ingot" },
+  "result": { "item": "mystic-edge:black_shadow_katana" }
+}

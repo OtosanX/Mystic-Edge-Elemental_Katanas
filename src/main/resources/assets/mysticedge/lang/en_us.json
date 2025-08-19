@@ -1,0 +1,48 @@
+{
+  "itemGroup.mysticedge.mystic_edge": "Mystic Edge Katanas",
+  "itemGroup.mystic_edge": "Mystic Edge Katanas",
+
+  "item.mysticedge.fire_katana": "Fire Katana",
+  "item.mysticedge.water_katana": "Water Katana",
+  "item.mysticedge.wind_katana": "Wind Katana",
+  "item.mysticedge.earth_katana": "Earth Katana",
+  "item.mysticedge.shadow_katana": "Shadow Katana",
+
+  "item.mysticedge.black_fire_katana": "Black Fire Katana",
+  "item.mysticedge.black_water_katana": "Black Water Katana",
+  "item.mysticedge.black_wind_katana": "Black Wind Katana",
+  "item.mysticedge.black_earth_katana": "Black Earth Katana",
+  "item.mysticedge.black_shadow_katana": "Black Shadow Katana",
+
+  "item.mysticedge.warden_fire_katana": "Warden Fire Katana",
+  "item.mysticedge.warden_water_katana": "Warden Water Katana",
+  "item.mysticedge.warden_wind_katana": "Warden Wind Katana",
+  "item.mysticedge.warden_earth_katana": "Warden Earth Katana",
+  "item.mysticedge.warden_shadow_katana": "Warden Shadow Katana",
+
+  "item.mysticedge.aethernova_katana": "Aethernova Katana",
+  "item.mysticedge.black_aethernova_katana": "Black Aethernova Katana",
+  "item.mysticedge.warden_aethernova_katana": "Warden Aethernova Katana",
+
+  "item.mysticedge.fire_katana.tooltip": "Forged in the flames of the Nether.\nFlame Slash: Engulfs enemies in fire.",
+  "item.mysticedge.water_katana.tooltip": "Flowing like the deepest ocean currents.\nAqua Dash: Dash through water, striking foes.",
+  "item.mysticedge.wind_katana.tooltip": "Swift as the mountain gusts.\nGale Step: Leap forward with a burst of wind.",
+  "item.mysticedge.earth_katana.tooltip": "Solid as the mountains themselves.\nSeismic Slam: Shake the ground, slowing enemies.",
+  "item.mysticedge.shadow_katana.tooltip": "Concealed in darkness, strikes unseen.\nPhantom Step: Teleport behind your foe.",
+
+  "item.mysticedge.black_fire_katana.tooltip": "Smoldering with Netherite fury.\nFlame Slash: Engulfs enemies in fire.",
+  "item.mysticedge.black_water_katana.tooltip": "The ocean's wrath condensed in steel.\nAqua Dash: Dash through water, striking foes.",
+  "item.mysticedge.black_wind_katana.tooltip": "Sharper than a tempest's edge.\nGale Step: Leap forward with a burst of wind.",
+  "item.mysticedge.black_earth_katana.tooltip": "Earth's strength, hardened further.\nSeismic Slam: Shake the ground, slowing enemies.",
+  "item.mysticedge.black_shadow_katana.tooltip": "Shadows sharpened into a blade.\nPhantom Step: Teleport behind your foe.",
+
+  "item.mysticedge.warden_fire_katana.tooltip": "Burning with ancient Warden power.\nFlame Slash: Engulfs enemies in fire + Darkness I.",
+  "item.mysticedge.warden_water_katana.tooltip": "Tides strengthened by Warden magic.\nAqua Dash: Dash through water, striking foes.",
+  "item.mysticedge.warden_wind_katana.tooltip": "Warden winds, swift and deadly.\nGale Step: Leap forward with a burst of wind.",
+  "item.mysticedge.warden_earth_katana.tooltip": "The mountain's heart made Warden steel.\nSeismic Slam: Shake the ground, slowing enemies.",
+  "item.mysticedge.warden_shadow_katana.tooltip": "Darkness incarnate in Warden form.\nPhantom Step: Teleport behind your foe.",
+
+  "item.mysticedge.aethernova_katana.tooltip": "Fusion of all elemental blades.\nElemental Rift: Teleport and unleash all elemental forces.",
+  "item.mysticedge.black_aethernova_katana.tooltip": "Elemental fury tempered in Netherite.\nElemental Rift: Teleport and unleash all elemental forces.",
+  "item.mysticedge.warden_aethernova_katana.tooltip": "The ultimate blade of legends.\nElemental Rift: Teleport and unleash all elemental forces."
+}

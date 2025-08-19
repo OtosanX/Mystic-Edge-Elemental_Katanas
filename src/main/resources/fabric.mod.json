@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "mysticedge",
+	"version": "${version}",
+	"name": "Mystic Edge Elemental Katanas",
+	"description": "Adds elemental katanas with special effects, durability, and optional loot compatibility.",
+	"authors": ["Caleb McNeil"],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "MIT",
+	"icon": "assets/mysticedge/icon.png",
+
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"meek.otosan.MysticEdgeMod"
+		],
+		"client": [
+			"meek.otosan.MysticEdgeClient"
+		]
+	},
+
+	"depends": {
+		"fabricloader": ">=0.14.23",
+		"fabric": "*"
+	}
+}

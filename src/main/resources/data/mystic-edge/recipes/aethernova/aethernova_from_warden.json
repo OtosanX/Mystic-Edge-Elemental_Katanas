@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "N F N",
+    "W E Wa",
+    "N S N"
+  ],
+  "key": {
+    "N": { "item": "minecraft:netherite_block" },
+    "F": { "item": "mystic-edge:warden_fire_katana" },
+    "W": { "item": "mystic-edge:warden_wind_katana" },
+    "E": { "item": "mystic-edge:warden_earth_katana" },
+    "Wa": { "item": "mystic-edge:warden_water_katana" },
+    "S": { "item": "mystic-edge:warden_shadow_katana" }
+  },
+  "result": {
+    "item": "mystic-edge:warden_aethernova_katana"
+  }
+}

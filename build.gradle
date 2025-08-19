@@ -1,0 +1,95 @@
+plugins {
+	id 'fabric-loom' version '1.10.5'
+	id 'maven-publish'
+	id 'idea'
+}
+
+version = project.mod_version
+group = project.maven_group
+
+base {
+	archivesName = project.archives_base_name
+}
+
+repositories {
+	// Loom automatically adds Minecraft, Mojang, and Fabric repositories
+}
+
+loom {
+	splitEnvironmentSourceSets() // separates main + client
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	mappings "net.fabricmc:yarn:1.20.1+build.10:v2"
+	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+
+	// Fabric API
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+	modImplementation "net.fabricmc.fabric-api:fabric-item-api-v1:${project.fabric_version}"
+}
+
+sourceSets {
+	main {
+		java.srcDirs = ["src/main/java"]
+		resources.srcDirs = ["src/main/resources"]
+	}
+	client {
+		java.srcDirs = ["src/client/java"]
+		resources.srcDirs = ["src/client/resources"]
+	}
+}
+
+tasks.withType(JavaCompile).configureEach {
+	options.release = 17
+}
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(17)
+	}
+	sourceCompatibility = JavaVersion.VERSION_17
+	targetCompatibility = JavaVersion.VERSION_17
+	withSourcesJar()
+}
+
+processResources {
+	inputs.property("version", project.version)
+	filesMatching("fabric.mod.json") {
+		expand("version": inputs.properties.version)
+	}
+}
+
+jar {
+	inputs.property("archivesName", project.base.archivesName)
+	from("LICENSE") {
+		rename { "${it}_${inputs.properties.archivesName}" }
+	}
+}
+
+publishing {
+	publications {
+		create("mavenJava", MavenPublication) {
+			artifactId = project.archives_base_name
+			from components.java
+		}
+	}
+}
+
+idea {
+	module {
+		downloadSources = true
+		downloadJavadoc = true
+	}
+}
+
+// --- Client run task ---
+tasks.named("runClient") {
+	dependsOn("classes")
+	classpath += sourceSets.client.output
+}
+
+// --- Configure client Java compile task ---
+tasks.named("compileClientJava") {
+	options.release = 17
+}

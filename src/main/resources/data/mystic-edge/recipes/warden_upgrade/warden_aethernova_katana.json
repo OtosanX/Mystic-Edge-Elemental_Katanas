@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": { "item": "deeperdarker:warden_upgrade_template" },
+  "base": { "item": "mystic-edge:black_aethernova_katana" },
+  "addition": { "item": "deeperdarker:reinforced_echo_shard" },
+  "result": { "item": "mystic-edge:warden_aethernova_katana" }
+}
